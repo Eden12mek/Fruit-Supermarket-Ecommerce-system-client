@@ -134,7 +134,7 @@ const PaymentForm = ({ totalPrice, productIds, quantities, onSuccess }) => {
             isLoading ? 'bg-gray-400' : 'bg-green-600 hover:bg-green-700'
           }`}
         >
-          {isLoading ? 'Processing...' : `Pay ${displayINRCurrency(totalPrice)}`}
+          {isLoading ? 'Processing...' : `Proceed to payment ${displayINRCurrency(totalPrice)}`}
         </button>
       </div>
     </div>
