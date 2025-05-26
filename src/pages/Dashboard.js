@@ -23,7 +23,6 @@ const Dashboard = () => {
     totalUsers: 0,
     totalProducts: 0,
     totalPayments: 0,
-    successfulPayments: 0,
     pendingPayments: 0,
     failedPayments: 0,
     approvedPayments: 0,
@@ -83,7 +82,6 @@ const Dashboard = () => {
         totalUsers: usersData.data?.length || 0,
         totalProducts: productsData.data?.length || 0,
         totalPayments: paymentsData.data?.total || 0,
-        successfulPayments: paymentsData.data?.successfulPayments || 0,
         pendingPayments: paymentsData.data?.pendingPayments || 0,
         failedPayments: paymentsData.data?.failedPayments || 0,
         approvedPayments: paymentsData.data?.approvedPayments || 0,
@@ -105,10 +103,9 @@ const Dashboard = () => {
 
   // Payment Status Pie Chart Data
   const paymentStatusData = {
-    labels: ['Successful', 'Pending', 'Failed', 'Approved'],
+    labels: [ 'Pending', 'Failed', 'Approved'],
     datasets: [{
       data: [
-        stats.successfulPayments,
         stats.pendingPayments,
         stats.failedPayments,
         stats.approvedPayments
