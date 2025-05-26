@@ -7,6 +7,7 @@ import {
   BarChartOutlined,
   TagsOutlined
 } from '@ant-design/icons';
+import { GiMoneyStack } from "react-icons/gi";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement } from 'chart.js';
 import { Pie, Bar } from 'react-chartjs-2';
 import SummaryApi from '../common';
@@ -183,7 +184,7 @@ const ManagerDashboard = () => {
             <Statistic
               title="Total Stock Value"
               value={stats.totalStockValue}
-              prefix={<DollarOutlined className="text-green-500" />}
+              prefix={<GiMoneyStack className="text-green-500" />}
               valueStyle={{ color: '#10b981' }}
               formatter={(value) => displayINRCurrency(value)}
             />
@@ -204,7 +205,7 @@ const ManagerDashboard = () => {
             <Statistic
               title="Total Sales"
               value={stats.totalProductSales}
-              prefix={<DollarOutlined className="text-yellow-500" />}
+              prefix={<GiMoneyStack className="text-yellow-500" />}
               valueStyle={{ color: '#f59e0b' }}
               formatter={(value) => displayINRCurrency(value)}
             />

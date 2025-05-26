@@ -9,6 +9,7 @@ import {
   CheckCircleOutlined,
   SyncOutlined,
 } from '@ant-design/icons';
+import { GiMoneyStack } from "react-icons/gi";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, LineElement, PointElement } from 'chart.js';
 import { Pie, Line } from 'react-chartjs-2';
 import SummaryApi from '../common';
@@ -185,7 +186,7 @@ const SalesDashboard = () => {
             <Statistic
               title="Total Sales"
               value={stats.totalSales}
-              prefix={<DollarOutlined className="text-emerald-500" />}
+              prefix={<GiMoneyStack className="text-emerald-500" />}
               valueStyle={{ color: '#00a78f' }}
               formatter={(value) => displayINRCurrency(value)}
             />
