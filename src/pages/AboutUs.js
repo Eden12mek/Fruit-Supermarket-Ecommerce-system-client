@@ -10,7 +10,7 @@ const AboutUs = () => {
         <div className="text-center mb-16">
           <img src={Logo} alt="Ab & Emu Fruit Cart Logo" className="w-28 mx-auto mb-4" />
           <h1 className="text-4xl md:text-5xl font-bold text-green-800 mb-4">
-            Ab & Emu Fruit Cart
+            Flavour Fruit Cart
           </h1>
           <p className="text-lg text-gray-600 max-w-xl mx-auto">
             Bringing nature’s sweetness to your doorstep.
@@ -23,7 +23,7 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-semibold text-green-800 mb-6">Our Journey</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Since 2023, Ab & Emu Fruit Cart has been a go-to destination for fresh, organic, and
+              Since 2023, Flavour Fruit Cart has been a go-to destination for fresh, organic, and
               locally-sourced fruits. Born out of a passion for healthy living, we connect farms to
               families with care and convenience.
             </p>
@@ -74,7 +74,7 @@ const AboutUs = () => {
 
         {/* Why Choose Us */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-green-800 mb-12">Why Choose Ab & Emu?</h2>
+          <h2 className="text-3xl font-bold text-green-800 mb-12">Why Choose Flavour Cart?</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
               {

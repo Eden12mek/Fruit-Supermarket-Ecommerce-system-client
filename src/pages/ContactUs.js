@@ -126,7 +126,7 @@ const ContactUs = () => {
                   {
                     icon: <FaPhone />,
                     label: "Phone",
-                    lines: ["+251 987456123", "+251 912345678"],
+                    lines: ["+251 989332332", "+251 912345678"],
                   },
                   {
                     icon: <FaEnvelope />,

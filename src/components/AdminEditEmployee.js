@@ -125,6 +125,8 @@ const AdminEditEmployee = ({ userData, onClose, fetchdata }) => {
                         >
                             <option value="ADMIN">Admin</option>
                             <option value="GENERAL">General</option>
+                            <option value="MANAGER">Manager</option>
+                            <option value="SALES">Sales</option>
                         </select>
                     </div>
                     
